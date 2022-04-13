@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220309 11:39:00.541" rpa="false" schemaversion="2">
+<suite id="s1" name="DDT" source="D:\Chaitu\Robot Framework\pythonProject\Training\TestCases\DDT.robot">
+<test id="s1-t1" name="Verify Login fails with Invalid Creds">
+<kw name="Start Browser" library="FAQ" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 11:39:01.827" level="INFO">Opening browser 'ff' to base url 'https://ovh.raybiztech.com/'.</msg>
+<msg timestamp="20220309 11:39:01.848" level="INFO">Firefox driver log is always forced to to: D:\Chaitu\Robot Framework\pythonProject\Training\Result\geckodriver-1.log</msg>
+<status status="PASS" starttime="20220309 11:39:01.825" endtime="20220309 11:39:28.743"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 11:39:28.744" endtime="20220309 11:39:28.843"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220309 11:39:28.843" endtime="20220309 11:39:28.847"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:39:30.849" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:39:28.847" endtime="20220309 11:39:30.849"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:01.825" endtime="20220309 11:39:30.850"/>
+</kw>
+<kw name="Invalid Login Scenarios">
+<arg>Test1</arg>
+<arg>Test1</arg>
+<arg>Incorrect username or password.
+</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TXTBOX_USERNAME}</arg>
+<arg>${USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:39:30.854" level="INFO">Typing text 'Test1' into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220309 11:39:30.853" endtime="20220309 11:39:31.574"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${TXTBOX_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:39:31.575" level="INFO">Typing password into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[2]/div/input'.</msg>
+<msg timestamp="20220309 11:39:31.774" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220309 11:39:31.832" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220309 11:39:31.575" endtime="20220309 11:39:31.832"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 11:39:31.833" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20220309 11:39:31.833" endtime="20220309 11:39:32.432"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:39:34.448" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:39:32.432" endtime="20220309 11:39:34.449"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TXT_ERROR}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 11:39:34.521" level="INFO">Current page contains text 'Incorrect username or password.
+'.</msg>
+<status status="PASS" starttime="20220309 11:39:34.450" endtime="20220309 11:39:34.521"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:30.851" endtime="20220309 11:39:34.522"/>
+</kw>
+<kw name="End browser" library="FAQ" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 11:39:34.525" endtime="20220309 11:39:40.249"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:34.524" endtime="20220309 11:39:40.249"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:01.821" endtime="20220309 11:39:40.250"/>
+</test>
+<test id="s1-t2" name="Verify Login fails with Invalid Creds">
+<kw name="Start Browser" library="FAQ" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 11:39:40.258" level="INFO">Opening browser 'ff' to base url 'https://ovh.raybiztech.com/'.</msg>
+<msg timestamp="20220309 11:39:40.259" level="INFO">Firefox driver log is always forced to to: D:\Chaitu\Robot Framework\pythonProject\Training\Result\geckodriver-2.log</msg>
+<status status="PASS" starttime="20220309 11:39:40.257" endtime="20220309 11:39:53.104"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 11:39:53.105" endtime="20220309 11:39:53.114"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220309 11:39:53.114" endtime="20220309 11:39:53.123"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:39:55.129" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:39:53.123" endtime="20220309 11:39:55.130"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:40.257" endtime="20220309 11:39:55.131"/>
+</kw>
+<kw name="Invalid Login Scenarios">
+<arg>Test2</arg>
+<arg>Test2</arg>
+<arg>Incorrect username or password.
+</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TXTBOX_USERNAME}</arg>
+<arg>${USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:39:55.140" level="INFO">Typing text 'Test2' into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220309 11:39:55.138" endtime="20220309 11:39:55.219"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${TXTBOX_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:39:55.220" level="INFO">Typing password into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[2]/div/input'.</msg>
+<msg timestamp="20220309 11:39:55.229" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220309 11:39:55.244" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220309 11:39:55.219" endtime="20220309 11:39:55.245"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 11:39:55.245" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20220309 11:39:55.245" endtime="20220309 11:39:55.665"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:39:57.677" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:39:55.665" endtime="20220309 11:39:57.678"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TXT_ERROR}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 11:39:57.721" level="INFO">Current page contains text 'Incorrect username or password.
+'.</msg>
+<status status="PASS" starttime="20220309 11:39:57.678" endtime="20220309 11:39:57.722"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:55.134" endtime="20220309 11:39:57.722"/>
+</kw>
+<kw name="End browser" library="FAQ" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 11:39:57.725" endtime="20220309 11:39:59.126"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:57.723" endtime="20220309 11:39:59.126"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:40.254" endtime="20220309 11:39:59.127"/>
+</test>
+<test id="s1-t3" name="Verify Login fails with Invalid Creds">
+<kw name="Start Browser" library="FAQ" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 11:39:59.131" level="INFO">Opening browser 'ff' to base url 'https://ovh.raybiztech.com/'.</msg>
+<msg timestamp="20220309 11:39:59.132" level="INFO">Firefox driver log is always forced to to: D:\Chaitu\Robot Framework\pythonProject\Training\Result\geckodriver-3.log</msg>
+<status status="PASS" starttime="20220309 11:39:59.131" endtime="20220309 11:40:09.556"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 11:40:09.557" endtime="20220309 11:40:09.586"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220309 11:40:09.586" endtime="20220309 11:40:09.590"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:40:11.603" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:40:09.591" endtime="20220309 11:40:11.603"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:59.130" endtime="20220309 11:40:11.603"/>
+</kw>
+<kw name="Invalid Login Scenarios">
+<arg>Test3</arg>
+<arg>Test3</arg>
+<arg>Incorrect username or password.
+</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TXTBOX_USERNAME}</arg>
+<arg>${USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:40:11.605" level="INFO">Typing text 'Test3' into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220309 11:40:11.605" endtime="20220309 11:40:11.650"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${TXTBOX_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:40:11.651" level="INFO">Typing password into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[2]/div/input'.</msg>
+<msg timestamp="20220309 11:40:11.660" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220309 11:40:11.680" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220309 11:40:11.650" endtime="20220309 11:40:11.680"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 11:40:11.680" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20220309 11:40:11.680" endtime="20220309 11:40:11.922"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:40:13.931" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:40:11.922" endtime="20220309 11:40:13.933"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TXT_ERROR}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 11:40:13.963" level="INFO">Current page contains text 'Incorrect username or password.
+'.</msg>
+<status status="PASS" starttime="20220309 11:40:13.934" endtime="20220309 11:40:13.964"/>
+</kw>
+<status status="PASS" starttime="20220309 11:40:11.604" endtime="20220309 11:40:13.965"/>
+</kw>
+<kw name="End browser" library="FAQ" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 11:40:13.968" endtime="20220309 11:40:15.567"/>
+</kw>
+<status status="PASS" starttime="20220309 11:40:13.966" endtime="20220309 11:40:15.567"/>
+</kw>
+<status status="PASS" starttime="20220309 11:39:59.129" endtime="20220309 11:40:15.567"/>
+</test>
+<test id="s1-t4" name="Verify Login fails with Invalid Creds">
+<kw name="Start Browser" library="FAQ" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${START_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220309 11:40:15.572" level="INFO">Opening browser 'ff' to base url 'https://ovh.raybiztech.com/'.</msg>
+<msg timestamp="20220309 11:40:15.573" level="INFO">Firefox driver log is always forced to to: D:\Chaitu\Robot Framework\pythonProject\Training\Result\geckodriver-4.log</msg>
+<status status="PASS" starttime="20220309 11:40:15.572" endtime="20220309 11:40:27.180"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220309 11:40:27.181" endtime="20220309 11:40:27.184"/>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20220309 11:40:27.184" endtime="20220309 11:40:27.213"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:40:29.216" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:40:27.213" endtime="20220309 11:40:29.217"/>
+</kw>
+<status status="PASS" starttime="20220309 11:40:15.572" endtime="20220309 11:40:29.218"/>
+</kw>
+<kw name="Invalid Login Scenarios">
+<arg>Test4</arg>
+<arg>Test4</arg>
+<arg>Incorrect username or password.
+</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TXTBOX_USERNAME}</arg>
+<arg>${USER_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:40:29.227" level="INFO">Typing text 'Test4' into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220309 11:40:29.224" endtime="20220309 11:40:29.303"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${TXTBOX_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220309 11:40:29.305" level="INFO">Typing password into text field '//*[@id="bg-overlay"]/div/div[2]/div/div/div/form/div[2]/div/input'.</msg>
+<msg timestamp="20220309 11:40:29.313" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220309 11:40:29.328" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220309 11:40:29.304" endtime="20220309 11:40:29.329"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220309 11:40:29.329" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20220309 11:40:29.329" endtime="20220309 11:40:29.570"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220309 11:40:31.582" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220309 11:40:29.570" endtime="20220309 11:40:31.582"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${TXT_ERROR}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 11:40:31.596" level="INFO">Current page contains text 'Incorrect username or password.
+'.</msg>
+<status status="PASS" starttime="20220309 11:40:31.582" endtime="20220309 11:40:31.596"/>
+</kw>
+<status status="PASS" starttime="20220309 11:40:29.220" endtime="20220309 11:40:31.597"/>
+</kw>
+<kw name="End browser" library="FAQ" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220309 11:40:31.598" endtime="20220309 11:40:33.460"/>
+</kw>
+<status status="PASS" starttime="20220309 11:40:31.597" endtime="20220309 11:40:33.460"/>
+</kw>
+<status status="PASS" starttime="20220309 11:40:15.569" endtime="20220309 11:40:33.460"/>
+</test>
+<status status="PASS" starttime="20220309 11:39:00.543" endtime="20220309 11:40:33.462"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="DDT">DDT</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220309 11:39:40.252" level="WARN">Multiple test cases with name 'Verify Login fails with Invalid Creds' executed in test suite 'DDT'.</msg>
+<msg timestamp="20220309 11:39:59.128" level="WARN">Multiple test cases with name 'Verify Login fails with Invalid Creds' executed in test suite 'DDT'.</msg>
+<msg timestamp="20220309 11:40:15.568" level="WARN">Multiple test cases with name 'Verify Login fails with Invalid Creds' executed in test suite 'DDT'.</msg>
+</errors>
+</robot>

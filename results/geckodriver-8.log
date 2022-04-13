@@ -1,0 +1,14 @@
+1649838295166	geckodriver	INFO	Listening on 127.0.0.1:50479
+1649838298530	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50480" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileX9vkmB"
+1649838299166	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileX9vkmB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50480/devtools/browser/5cbe5b95-78b0-495c-9232-26aa2e368078
+1649838303944	Marionette	INFO	Listening on port 50487
+1649838304464	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649838306882	Marionette	INFO	Stopped listening on port 50487
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 996: Error: Connection is not open.
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 996: Error: Connection is not open.
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "DoHController: clear state and remove observers"
